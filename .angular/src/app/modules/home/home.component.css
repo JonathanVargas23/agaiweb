@@ -1,0 +1,114 @@
+.principal-banner-images {
+  width: 100%;
+  display: flex;
+}
+
+.welcome {
+  width: 100%;
+  display: flex;
+  background-color: #572F76;
+  margin: 0px;
+  padding: 0px;
+}
+
+.welcome-container {
+  width: 50%;
+  margin: 0%;
+  padding: 0px;
+}
+
+.welcome-container.container-text {
+  padding: 20px 40px;
+}
+
+.welcome-container-title {
+  text-align: center;
+  color: #01FEAF;
+  padding: 0px 30px;
+}
+
+.welcome-container-content {
+  text-align: left;
+  color: #FFFFFF;
+  padding: 0px 10px;
+}
+
+.welcome-container-button {
+  border: solid 3px #01FEAF;
+  border-radius: 16px;
+  color: #01FEAF;
+  background-color: #572F76;
+  padding: 8px 16px;
+  margin: 10px 0px;
+}
+
+.statistics {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+}
+
+.statistics-container {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px 32px;
+}
+
+.statistics-container.container-first {
+  width: 33%;
+  background: #00926A;
+}
+
+.statistics-container.container-second {
+  width: 33%;
+  background: #007A54;
+}
+
+.statistics-container.container-third {
+  width: 33%;
+  background: #00583B;
+}
+
+.services {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.services-title {
+  text-align: center;
+  color: #572F76;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.services-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.services-container-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.services-card-image {
+  width: 80px;
+  height: 100px;
+}
+
+.services-card-description {
+  text-align: center;
+  color: #572F76;
+  font-size: 18px;
+  font-weight: bold;
+}

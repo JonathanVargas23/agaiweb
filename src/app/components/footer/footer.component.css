@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer-background {
+  width: 100%;
+  background: linear-gradient(to bottom, #9e3d8f 70%, #007954 30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px 0px 30px 0px;
+}
+
+.footer-container-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-header-img {
+  width: 200px;
+}
+
+.footer-container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-content-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-content-button {
+  width: 100%;
+  font-size: 18px;
+  color: #000000;
+  background-color: #01FEAF;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.footer-container-form {
+  width: 80%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+
+.footer-form-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 10px 20px;
+}
+
+.form-description-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #9e3d8f;
+  margin: 0px;
+  padding: 8px;
+}
+
+.form-description-content {
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+}
+
+.footer-form-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+.footer-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form-input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 4px 0px;
+  margin: 8px 0px;
+}
+
+.footer-form-button {
+  background-color: #ffffff;
+  color: #9e3d8f;
+  border: 2px solid #9e3d8f;
+  border-radius: 16px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 30px 50px;
+}
+
+.footer-nav-container {
+  width: 500%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 10px;
+}
+
+.right-align {
+  justify-content: start;
+  align-items: end;
+}
+
+.footer-nav-horizontal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0px;
+  margin: 0px;
+}
+
+.nav-horizontal-option {
+  color: #979797;
+  margin: 0px 10px 0px 0px;
+}
+
+.nav-vertical-option {
+  color: #7b7b7b;
+  padding: 8px 0px;
+  margin: 0px;
+}
+
+.footer-nav-logo {
+  width: 150px;
+}
