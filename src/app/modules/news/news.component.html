@@ -1,1 +1,93 @@
-<p>news works!</p>
+<app-header urlImageBanner="../../../assets/banners/Banner nosotros@2x.png" />
+<section class="Blog__seccion">
+
+  <div class="Blog__container">
+    <div class="Container__listBlog">
+      <section class="slides">
+        <div>
+          <h2>Publicaciones destacadas</h2>
+          <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+            <div class="card blog" *ngFor="let blog of dataBlogSelected" (click)="goTo(blog[0])">
+              <div class="Card__blog_image">
+                <img [src]="blog[2].src" alt="image blog">
+              </div>
+              <div class="Card__blog_text">
+                <p>{{blog[1].content}}</p>
+              </div>
+              <div class="Card__blog_date">
+                <p>2022-05-01</p>
+              </div>
+            </div>
+
+          </owl-carousel>
+        </div>
+      </section>
+      <div class="Container__listBlog_blogs">
+        <div class="Blog__seccion_header">
+          <div class="input-wrapper">
+            <input type="text" class="input" placeholder="Search" [formControl]="mySearch">
+            <img *ngIf="!mySearchValue" width="25px"
+              src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/buscar.svg"
+              alt="Icon Search">
+            <span class="close" *ngIf="mySearchValue" (click)="this.mySearch.setValue('')" width="25px"></span>
+          </div>
+        </div>
+        <div class="Container__listBlog_content">
+          <div class="card blog2" style="background-color: #009A74; height: auto;"
+            *ngFor="let blog of  dataShow | paginate: { itemsPerPage: 4, currentPage: pages }"
+            (click)="goTo(blog[0].id)">
+            <div class="Card__blog_image">
+              <img [src]="blog[2].src" alt="image blog">
+            </div>
+            <div class="Card__blog_text">
+              <p>{{blog[1].content}}</p>
+            </div>
+            <div class="Card__blog_paragraph">
+              <p>{{blog[3].content.substr(0, 210) + "..."}}</p>
+            </div>
+            <div class="Card__blog_date">
+              <p>2022-05-01</p>
+            </div>
+          </div>
+        </div>
+        <div class="Blog__container_notFound" *ngIf="dataShow.length === 0 ">
+          <h3>Nose encontraron resultados</h3>
+        </div>
+        <div class="Blog__seccion_paginator">
+          <pagination-controls class="my-pagination" (pageChange)="pages = $event" previousLabel="{{'Ant'}}"
+            nextLabel="{{'Sig'}}"></pagination-controls>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="Contaniner__suggestion">
+      <div class="NewEvents__container_title">
+        <div class="Container__title_img">
+          <img src="../../../assets/news/Icon_calendar.png" alt="Icon calendar">
+        </div>
+        <div class="Container__title_text">
+          <p>Proximos eventos</p>
+        </div>
+      </div>
+
+      <app-new-events bgColor="#009A74" number="1/10" eventTitle="Titulo del evento" location="Ubicacion" />
+    </div>
+  </div>
+</section>
+<section class="Seccion__paute_conNosotros">
+  <div class="Paute__conosotros_container">
+    <div class="Paute__conosotros_container_img">
+      <img src="../../../assets/banners/Imge_hoja_verde.png" alt="Imagen paute con nosotros">
+    </div>
+    <div class="Paute__conosotros_container_text">
+      <p>
+        Paute con nosotros
+      </p>
+      <span>
+        Pregunte por nuestros planes <a href="www.google.com">Aqui</a>
+      </span>
+    </div>
+  </div>
+</section>
+

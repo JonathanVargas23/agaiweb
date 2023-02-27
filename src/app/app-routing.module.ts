@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './modules/home/home.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { NewsComponent } from './modules/news/news.component';
+import { ViewBlogComponent } from './modules/view-blog/view-blog.component';
 
 const routes: Routes = [
   {
@@ -22,10 +24,20 @@ const routes: Routes = [
       {
         path: 'about-us',
         component: AboutUsComponent
-      }
+      },
+      {
+        path: 'news',
+        component: NewsComponent
+      },
+      {
+        path: 'viewBlog/:id',
+        component: ViewBlogComponent,
+        data: { title: 'viewBlog' }
+      },
+
     ]
   }
-]; 
+];
 
 @NgModule({
   declarations: [],
@@ -38,4 +50,4 @@ const routes: Routes = [
   ]
 })
 
-export class AppRoutingModule {}
+export class AppRoutingModule { }
