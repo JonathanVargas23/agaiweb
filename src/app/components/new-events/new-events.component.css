@@ -1,0 +1,26 @@
+.NewEvents__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.NewEvents__container_numbers {
+  width: 30%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.NewEvents__container_text {
+  width: 70%;
+  margin: 0px auto;
+}
+
+.NewEvents__container_text p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 0px;
+  color: #01FEAF;
+}
