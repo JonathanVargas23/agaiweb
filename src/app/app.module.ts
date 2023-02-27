@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireRemoteConfigModule, SETTINGS } from '@angular/fire/compat/remote-config';
+import { HttpClientModule } from '@angular/common/http';
 import { SkeletonModule } from '@agrodatai/skeleton';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { OwlModule } from 'ngx-owl-carousel';
 
 import { environment } from '../../firebaseCredentials';
 
@@ -18,9 +17,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewsComponent } from './modules/news/news.component';
-import { HeaderComponent } from './components/header/header.component';
-import { NewEventsComponent } from './components/new-events/new-events.component';
+import { ReportsComponent } from './modules/reports/reports.component';
+import { CardComponent } from './components/card/card.component';
+import { SupportComponent } from './modules/support/support.component';
 import { ViewBlogComponent } from './modules/view-blog/view-blog.component';
+import { NewEventsComponent } from './components/new-events/new-events.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { OwlModule } from 'ngx-owl-carousel';
+import { ServicesComponent } from './modules/services/services.component';
 
 
 @NgModule({
@@ -32,21 +37,26 @@ import { ViewBlogComponent } from './modules/view-blog/view-blog.component';
     FooterComponent,
     NavbarComponent,
     NewsComponent,
-    HeaderComponent,
+    ReportsComponent,
+    CardComponent,
+    SupportComponent,
+    ViewBlogComponent,
     NewEventsComponent,
-    ViewBlogComponent
+    HeaderComponent,
+    ServicesComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireRemoteConfigModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
-    SkeletonModule,
     NgxPaginationModule,
     OwlModule,
-    AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireRemoteConfigModule,
+    SkeletonModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

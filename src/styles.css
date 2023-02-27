@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --morado1: #4F317A;
+  --morado2: #7F42A0;
+  --morado3: #9C4DAD;
+  --verde1: #00593F;
+  --verde2: #007262;
+  --verde3: #009A74;
+  --verde4: rgb(0, 255, 176);
+  --gris: rgb(242, 242, 242);
+  --animate-duration: 1500ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-style: normal;
+  font-family: 'Google Sans';
+  user-select: none;
+}

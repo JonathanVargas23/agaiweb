@@ -1,0 +1,148 @@
+.reports-container {
+  height: 90vh;
+  background-color: #009A74;
+  margin-bottom: 5vh;
+}
+
+.reports-container-header {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background: url(https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/Fondo-nuevo-mas-margen.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 8%;
+}
+
+.reports-container-content {
+  width: 50%;
+  font-size: 12px;
+  text-align: left;
+  font-size: 5px;
+  color: #ffffff;
+  padding-left: 10%;
+}
+
+.reports-container-content h1 {
+  font-size: 1.7rem;
+}
+
+.reports-container-content h3 {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.reports-container-image {
+  width: 50%;
+  text-align: center;
+}
+
+.reports-container-image img {
+  width: 70%;
+}
+
+.reports-nodata-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reports-nodata-container img {
+  width: 70%;
+}
+
+.reports-container-button {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.reports-container-button button {
+  width: 12%;
+  height: 45px;
+  color: #009A74;
+  border: 1px solid #009A74;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reports-container {
+    height: 610px;
+    margin-bottom: 5vh;
+  }
+  
+  .reports-container-header {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 25%;
+  }
+  
+  .reports-container-content {
+    text-align: left;
+    font-size: 12px;
+    padding-top: 10%;
+    padding-left: 0;
+  }
+  
+  .reports-container-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .reports-container-content h3 {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  
+  .reports-container-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .reports-nodata-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .reports-nodata-container img {
+    width: 100%;
+  }
+
+  .reports-container-button {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .reports-container-button .load {
+    color: #009A74;
+    border: 1px solid #009A74;
+    width: 50%;
+  }
+
+  .reports-container-button .load:hover {
+    display: none;
+  }
+}

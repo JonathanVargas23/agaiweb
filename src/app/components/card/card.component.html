@@ -1,0 +1,21 @@
+<section *ngFor="let new of news" class="news">
+  <div class="card" >
+    <div [ngClass]="{'image': true, 'logo': (new.image == null || new.image == '')? true: false}">
+      <img 
+        onerror="this.src='https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/don-tulios/DonTulionoticia.svg'"  
+        [src]="(new.image == null || new.image == '') ? 'https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/don-tulios/DonTulionoticia.svg': new.image"
+        alt="DonTulio noticias agro"
+      />
+    </div>
+    <div class="content">
+      <span style="text-decoration: none;" class="link-top" >{{ new.date_published }}</span>
+      <h2>{{ new.title | slice:0:150 }}</h2><br>
+      <p>{{ new.content | slice:0:230}} ...</p>
+      <a
+        class="link-bottom"
+        [href]="new.source"
+        target="_blank"
+      >Leer completo...</a>
+    </div>
+  </div>
+</section>

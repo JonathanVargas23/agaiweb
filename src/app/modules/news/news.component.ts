@@ -1,5 +1,4 @@
 import { Component, Inject, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
-
 import { Router } from '@angular/router';
 import { SLIDE_OPTIONS } from './blog-constants';
 import { DATA_BLOG, DATA_BLOG_SELECTED } from '../../dataBlogs';

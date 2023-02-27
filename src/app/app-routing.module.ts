@@ -4,8 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './modules/home/home.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { ReportsComponent } from './modules/reports/reports.component';
+import { SupportComponent } from './modules/support/support.component';
 import { NewsComponent } from './modules/news/news.component';
 import { ViewBlogComponent } from './modules/view-blog/view-blog.component';
+import { ServicesComponent } from './modules/services/services.component';
 
 const routes: Routes = [
   {
@@ -26,6 +29,18 @@ const routes: Routes = [
         component: AboutUsComponent
       },
       {
+        path: 'services',
+        component: ServicesComponent
+      },
+      {
+        path: 'reports',
+        component: ReportsComponent
+      },
+      {
+        path: 'support',
+        component: SupportComponent
+      },
+      {
         path: 'news',
         component: NewsComponent
       },
@@ -33,8 +48,7 @@ const routes: Routes = [
         path: 'viewBlog/:id',
         component: ViewBlogComponent,
         data: { title: 'viewBlog' }
-      },
-
+      }
     ]
   }
 ];

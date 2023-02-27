@@ -1,0 +1,26 @@
+.header-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  margin: 0px;
+  padding: 20px;
+}
+
+.header-container-navbar {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-container-navbar a {
+  text-decoration: none;
+  font-family: 'Google Sans';
+  font-weight: 300;
+  font-weight: bold;
+  color: var(--verde3);
+  margin-right: 25px;
+}

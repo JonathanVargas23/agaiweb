@@ -1,4 +1,4 @@
-<app-header urlImageBanner="../../../assets/banners/Banner nosotros@2x.png" />
+<app-header urlImageBanner="../../../assets/images/banners/banner-nosotros.png" />
 <section class="Blog__seccion">
 
   <div class="Blog__container">
@@ -26,9 +26,12 @@
         <div class="Blog__seccion_header">
           <div class="input-wrapper">
             <input type="text" class="input" placeholder="Search" [formControl]="mySearch">
-            <img *ngIf="!mySearchValue" width="25px"
+            <img 
+              *ngIf="!mySearchValue"
+              width="25px"
               src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/buscar.svg"
-              alt="Icon Search">
+              alt="Icon Search"
+            />
             <span class="close" *ngIf="mySearchValue" (click)="this.mySearch.setValue('')" width="25px"></span>
           </div>
         </div>
@@ -54,8 +57,12 @@
           <h3>Nose encontraron resultados</h3>
         </div>
         <div class="Blog__seccion_paginator">
-          <pagination-controls class="my-pagination" (pageChange)="pages = $event" previousLabel="{{'Ant'}}"
-            nextLabel="{{'Sig'}}"></pagination-controls>
+          <pagination-controls
+            class="my-pagination"
+            (pageChange)="pages = $event"
+            previousLabel="{{'Ant'}}"
+            nextLabel="{{'Sig'}}"
+          ></pagination-controls>
         </div>
       </div>
 
@@ -64,7 +71,7 @@
     <div class="Contaniner__suggestion">
       <div class="NewEvents__container_title">
         <div class="Container__title_img">
-          <img src="../../../assets/news/Icon_calendar.png" alt="Icon calendar">
+          <img src="../../../assets/images/news/Icon_calendar.png" alt="Icon calendar">
         </div>
         <div class="Container__title_text">
           <p>Proximos eventos</p>
@@ -78,7 +85,7 @@
 <section class="Seccion__paute_conNosotros">
   <div class="Paute__conosotros_container">
     <div class="Paute__conosotros_container_img">
-      <img src="../../../assets/banners/Imge_hoja_verde.png" alt="Imagen paute con nosotros">
+      <img src="../../../assets/images/banners/Imge_hoja_verde.png" alt="Imagen paute con nosotros">
     </div>
     <div class="Paute__conosotros_container_text">
       <p>
@@ -90,4 +97,3 @@
     </div>
   </div>
 </section>
-

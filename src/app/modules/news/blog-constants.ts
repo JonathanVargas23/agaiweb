@@ -1,4 +1,3 @@
-
 export const SLIDE_OPTIONS = {
   autoplay: true,
   autoplaySpeed: 1000,

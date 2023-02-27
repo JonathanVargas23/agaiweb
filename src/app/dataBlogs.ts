@@ -1,4 +1,3 @@
-
 export const DATA_BLOG = [
   [
     {
@@ -229,4 +228,3 @@ arrayData.map(item => {
   )
 });
 export const  DATA_BLOG_SELECTED = newArray;
-

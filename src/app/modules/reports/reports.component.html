@@ -1,0 +1,21 @@
+<section class="reports-container">
+  <div class="reports-container-header">
+    <div class="reports-container-content">
+      <h3>{{ sectionHeader.title }}</h3>
+      <h1>{{ sectionHeader.description }}</h1>
+    </div>
+    <div class="reports-container-image">
+      <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/imagen-noticias.png" alt="Imagen Agrodat AI Noticias del agro" srcset="">
+    </div>
+  </div>
+</section>
+
+<div *ngIf="noData" class="reports-nodata-container">
+  <img src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/Don-ttulio-news.jpg" alt="Don Tulio News" srcset="">
+</div>
+
+<app-card [news]="news"></app-card>
+
+<div *ngIf="news.length > 0" class="reports-container-button">
+  <button class="reports-container-button" (click)="getNews()">{{ !isLoad? (buttonContent) : (buttonLoading) }}</button>
+</div>
