@@ -13,6 +13,11 @@
 
 .Services__ours_services {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   padding: 30px;
 }
 
@@ -26,6 +31,7 @@
 }
 
 .Our__app_title {
+  text-align: center;
   font-size: 2rem;
   color: #5BECBC;
 }
@@ -38,7 +44,8 @@
 }
 
 .Our__app_btn {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   text-align: center;
   border-radius: 50px;
   color: #04806e;
@@ -57,9 +64,21 @@
 
 .HelpYou__container_helps {
   width: 100%;
+  min-height: 400px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0px auto;
   padding: 30px;
+}
+
+.HelpYou__container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #4F3170;
+  margin: 30px auto;
 }
 
 .Technology__container {
@@ -74,6 +93,7 @@
 .Technology__container_content {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 30px;
