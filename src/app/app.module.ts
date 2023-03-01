@@ -26,6 +26,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ServicesComponent } from './modules/services/services.component';
+import { OurServiceComponent } from './components/servicesPage/our-service/our-service.component';
+import { HelpYouComponent } from './components/servicesPage/help-you/help-you.component';
+import { OurTechnologyComponent } from './components/servicesPage/our-technology/our-technology.component';
+import { ObjectivesComponent } from './components/aboutUsPage/objectives/objectives.component';
 
 
 @NgModule({
@@ -43,7 +47,11 @@ import { ServicesComponent } from './modules/services/services.component';
     ViewBlogComponent,
     NewEventsComponent,
     HeaderComponent,
-    ServicesComponent
+    ServicesComponent,
+    OurServiceComponent,
+    HelpYouComponent,
+    OurTechnologyComponent,
+    ObjectivesComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
