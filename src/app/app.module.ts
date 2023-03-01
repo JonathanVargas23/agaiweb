@@ -29,6 +29,7 @@ import { ServicesComponent } from './modules/services/services.component';
 import { OurServiceComponent } from './components/servicesPage/our-service/our-service.component';
 import { HelpYouComponent } from './components/servicesPage/help-you/help-you.component';
 import { OurTechnologyComponent } from './components/servicesPage/our-technology/our-technology.component';
+import { ObjectivesComponent } from './components/aboutUsPage/objectives/objectives.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { OurTechnologyComponent } from './components/servicesPage/our-technology
     ServicesComponent,
     OurServiceComponent,
     HelpYouComponent,
-    OurTechnologyComponent
+    OurTechnologyComponent,
+    ObjectivesComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),

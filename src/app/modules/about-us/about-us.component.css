@@ -1,0 +1,69 @@
+.AboutUs__page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.AboutUs__page_ourHistory {
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.OurHistory__title, .SeccionThree__title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #4F3170;
+  margin: 30px auto;
+}
+
+.OurHistory__text {
+  width: 100%;
+  margin: 0px;
+}
+
+.OurHistory__page_seccionTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.OurHistory__page_seccionTwo h4 {
+  font-size: 2rem;
+  color: #5BECBC;
+
+  margin: 0px;
+}
+
+.OurHistory__page_seccionTwo p {
+
+  color: #ffffff;
+  margin: 5px 0px;
+
+}
+
+.SeccionTwo__ourPassion {
+  width: 100%;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #4F3170;
+  padding: 40px;
+}
+
+.SeccionTow__ourPurpose {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #7F42A0;
+  padding: 40px;
+
+}
