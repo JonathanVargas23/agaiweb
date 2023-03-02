@@ -1,0 +1,28 @@
+.OurTechnology__container {
+  width: 150px;
+
+}
+
+.OurTechnology__container_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OurTechnology__container_img img {
+  width: 100px;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.OurTechnology__container_text {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.OurTechnology__container_text p {
+  margin: 0px;
+}

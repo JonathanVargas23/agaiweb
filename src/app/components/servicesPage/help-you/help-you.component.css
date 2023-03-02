@@ -1,0 +1,53 @@
+.HelpYou__container {
+  width: 300px;
+}
+
+.HelpYou__container_img {
+  width: 100%;
+}
+
+.HelpYou__container_img img {
+  width: 300px;
+  cursor: pointer;
+}
+
+.HelpYou__container_text {
+  width: 300px;
+  background-color: #dddddd96;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.HelpYou__container_text p {
+  margin: 0px;
+}
+
+.Vertical__line_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: -35px;
+}
+
+.Vertical__line_item {
+  width: 5px;
+  height: 25px;
+  background-color: #4F3170;
+
+}
+
+.Show {
+  display: none;
+  opacity: 0;
+
+  transition: all 5s;
+}
+
+.HelpYou__container_img:hover~.Show {
+  opacity: 1;
+  transition: all 5s;
+  display: block;
+}

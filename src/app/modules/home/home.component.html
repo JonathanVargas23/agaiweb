@@ -7,49 +7,63 @@
   <img class="principal-banner-images" src="../../../assets/home/principal-banner-01.png" alt="principal-banner"/>
 </section>
 <section class="welcome">
-  <div class="welcome-container container-text">
-    <h3 class="welcome-container-title">{{ sectionWelcome.title }}</h3>
-    <p class="welcome-container-content">{{ sectionWelcome.description }}</p>
-    <button class="welcome-container-button">{{ sectionWelcome.button }}</button>
-  </div>
-  <div class="welcome-container">
-    <!-- <iframe title="home-video" src={{sectionWelcome.video}} frameborder="0" allowfullscreen></iframe> -->
+  <div class="welcome-section">
+    <div class="welcome-container">
+      <h3 class="welcome-container-title">{{ sectionWelcome.title }}</h3>
+      <p class="welcome-container-content">{{ sectionWelcome.description }}</p>
+      <button class="welcome-container-button">{{ sectionWelcome.button }}</button>
+    </div>
+    <div class="welcome-container">
+      <iframe 
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/3kgX81zOjcI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </section>
 
 <section class="statistics">
-  <div class="statistics-container container-first">
-    <h1>+ 200.000</h1>
-    <p>Productos registrados</p>
-  </div>
-  <div class="statistics-container container-second">
-    <h1>+ 200.000</h1>
-    <p>Solicitudes de crédito</p>
-  </div>
-  <div class="statistics-container container-third">
-    <h1>+ 200.000</h1>
-    <p>Alertas enviadas</p>
+  <div class="statistics-section">
+    <div class="statistics-container container-first">
+      <h1>+ 200.000</h1>
+      <p>Productos registrados</p>
+    </div>
+    <div class="statistics-container container-second">
+      <h1>+ 200.000</h1>
+      <p>Solicitudes de crédito</p>
+    </div>
+    <div class="statistics-container container-third">
+      <h1>+ 200.000</h1>
+      <p>Alertas enviadas</p>
+    </div>
   </div>
 </section>
 
 <section class="services">
-  <p class="services-title">{{ sectionServices.title }}</p>
-  <div class="services-container">
-    <div class="services-container-card">
-      <img class="services-card-image" src="../../../assets/home\/recurso-12.png" alt="servicio-01"/>
-      <p class="services-card-description">Obtener información actualizada</p>
-    </div>
-    <div class="services-container-card">
-      <img class="services-card-image" src="../../../assets/home\/recurso-10.png" alt="servicio-02"/>
-      <p class="services-card-description">Solicitar créditos sin salir de tu finca</p>
-    </div>
-    <div class="services-container-card">
-      <img class="services-card-image" src="../../../assets/home\/recurso-11.png" alt="servicio-03"/>
-      <p class="services-card-description">Comercializar tus productos y comprar insumos</p>
-    </div>
-    <div class="services-container-card">
-      <img class="services-card-image" src="../../../assets/home\/recurso-9.png" alt="servio-04"/>
-      <p class="services-card-description">Recibir alertas climáticas, sanitarias y de mercado</p>
+  <div class="services-section">
+    <p class="services-title">{{ sectionServices.title }}</p>
+    <div class="services-container">
+      <div class="services-container-card">
+        <img class="services-card-image" src="../../../assets/home\/recurso-12.png" alt="servicio-01"/>
+        <p class="services-card-description">Obtener información actualizada</p>
+      </div>
+      <div class="services-container-card">
+        <img class="services-card-image" src="../../../assets/home\/recurso-10.png" alt="servicio-02"/>
+        <p class="services-card-description">Solicitar créditos sin salir de tu finca</p>
+      </div>
+      <div class="services-container-card">
+        <img class="services-card-image" src="../../../assets/home\/recurso-11.png" alt="servicio-03"/>
+        <p class="services-card-description">Comercializar tus productos y comprar insumos</p>
+      </div>
+      <div class="services-container-card">
+        <img class="services-card-image" src="../../../assets/home\/recurso-9.png" alt="servio-04"/>
+        <p class="services-card-description">Recibir alertas climáticas, sanitarias y de mercado</p>
+      </div>
     </div>
   </div>
 </section>

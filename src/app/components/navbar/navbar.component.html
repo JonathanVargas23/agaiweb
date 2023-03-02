@@ -1,11 +1,43 @@
 <header>
   <div class="header-container">
+    <div class="header-container-logo" (click)="goHome()">
+      <img
+        class="header-logo-image"
+        src="../../../assets/main/logo-agrodatai-transparente.png"
+        alt="Logo principal AgrodatAi" />
+    </div>
     <nav class="header-container-navbar">
-      <a routerLink="/about-us" routerLinkActive="activo">Nosotros</a>
-      <a routerLink="/services" routerLinkActive="activo">Servicios</a>
-      <a routerLink="/reports" routerLinkActive="activo">Noticias</a>
-      <a routerLink="/news" routerLinkActive="activo">Novedades</a>
-      <a routerLink="/support" routerLinkActive="activo">Contacto</a>
+      <a class="header-navbar-option" routerLink="/about-us" routerLinkActive="activo">Nosotros</a>
+      <a class="header-navbar-option" routerLink="/services" routerLinkActive="activo">Servicios</a>
+      <a class="header-navbar-option" routerLink="/reports" routerLinkActive="activo">Noticias</a>
+      <a class="header-navbar-option" routerLink="/news" routerLinkActive="activo">Novedades</a>
+      <a class="header-navbar-option" routerLink="/support" routerLinkActive="activo">Contacto</a>
+      <a
+        class="header-login-option"
+        (click)="registerEvent()"
+        href="https://portal.agrodatai.com/"
+        target="_blank"
+      >Ingresar</a>
+      <div class="header-dropdown-languages header-dropdown" *ngIf="lang">
+        <img 
+          [src]="lang === 'es' ? 'https://storage.googleapis.com/front-agrodatai/flags_v2/col.svg' : lang==='en' ? 'https://storage.googleapis.com/front-agrodatai/flags_v2/usa.svg' : '' "
+          alt="Icon Lang"
+        />
+        <div class="header-dropdown-text">
+          {{ lang?.toUpperCase() }}
+        </div>
+
+        <div class="header-dropdown-content">
+          <div class="header-dropdown-languages--es dropdown-with-flag" (click)="changeLang('es')">
+            <img [src]="'https://storage.googleapis.com/front-agrodatai/flags_v2/col.svg'" alt="Icon Lang" />
+            <h6>ES</h6>
+          </div>
+          <div class="header-dropdown-languages--en dropdown-with-flag" (click)="changeLang('en')">
+            <img [src]="'https://storage.googleapis.com/front-agrodatai/flags_v2/usa.svg'" alt="Icon Lang" />
+            <h6>EN</h6>
+          </div>
+        </div>
+    </div>
     </nav>
   </div>
 </header>

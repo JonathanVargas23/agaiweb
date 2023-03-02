@@ -1,3 +1,13 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
 .footer-background {
   width: 100%;
   background: linear-gradient(to bottom, #9e3d8f 70%, #007954 30%);
@@ -7,6 +17,15 @@
   justify-content: center;
   margin: 0px;
   padding: 0px 0px 30px 0px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-container-header {
@@ -112,6 +131,7 @@
 
 .footer-nav {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   margin: 0px;
