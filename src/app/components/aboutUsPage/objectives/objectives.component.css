@@ -1,0 +1,65 @@
+.Objective__container {
+  width: 430px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.Objective__container_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Container__content_image {
+  width: 30%;
+
+}
+.Container__content_image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0px auto;
+}
+.Container__content_text{
+  width: calc(100% - 30%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Container__content_hover {
+  width: calc(100% - 30%);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Objective__container_content:hover~.Container__content_text{
+  display: none;
+  opacity: 0;
+
+  transition: all 5s;
+}
+
+
+.Container__content_text h3 {
+  font-size: 2rem;
+  color: var(--verde3);
+  font-weight: 800;
+}
+.Container__content_text span {
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--morado3);
+}
+.Container__content_hover h3{
+  font-size: 1.6rem;
+  color: var(--morado3);
+  font-weight: 800;
+}
+
+.Container__content_hover p {
+  font-weight: 800;
+}
+
