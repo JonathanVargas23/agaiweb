@@ -109,6 +109,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('../../../assets/home/background-services.png');
+  background-size: auto;
+  background-repeat: no-repeat;
   padding: 0px;
   margin: 0px;
 }

@@ -34,7 +34,88 @@
   <section class="OurHistory__page_seccionThree">
     <h2 class="SeccionThree__title">Contribuímos en los siguientes Objetivos de Desarrollo Sostenible (ODS)</h2>
     <div class="SeccionThree__content">
-      <app-objectives />
+      <app-objectives imageUrl="../../../assets/aboutUs/Recurso 2.png" textTitle="Fin de la pobreza" textContent="Fortaleciendo a pequeños productores para que rentables.
+      sean más productivos y rentables." />
+      <app-objectives imageUrl="../../../assets/aboutUs/Recurso 3.png" textTitle="Fin de la pobreza" textContent="Fortaleciendo a pequeños productores para que rentables.
+      sean más productivos y rentables." />
+      <app-objectives imageUrl="../../../assets/aboutUs/Recurso 2.png" textTitle="Fin de la pobreza" textContent="Fortaleciendo a pequeños productores para que rentables.
+      sean más productivos y rentables." />
+    </div>
+  </section>
+  <section class="About__page_gallery">
+    <div class="Gallery__title">
+      <h2>Galería de imágenes</h2>
+      <p>¡Siempre estamos cerca de nuestros productores!</p>
+    </div>
+    <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+      <!-- <div class="card blog" *ngFor="let blog of dataBlogSelected" (click)="goTo(blog[0])"> -->
+      <div class="About__slider_container">
+        <div class="Container__content">
+          <div class="Container__content">
+            <img
+              src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/blog/Blog-1-pequena.png"
+              alt="image blog" />
+          </div>
+        </div>
+      </div>
+
+      <div class="About__slider_container">
+        <div class="Container__content">
+          <div class="Container__content">
+            <img
+              src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/blog/Blog-2-pequena.png"
+              alt="image blog" />
+          </div>
+        </div>
+      </div>
+    </owl-carousel>
+  </section>
+  <section class="AboutUs__page_knowD1onTulio">
+    <div class="KnowD1onTulio__content">
+      <h2>¿Ya conoces a Don Tulio?</h2>
+      <p>
+        Don Tulio es asesor y amigo de los productores agropecuarios de información de manera rápida para apoyarlos en
+        la toma de Colombia que a través de WhatsApp y mensajes de texto, brinda
+        para los campesinos de todo el país que quieran interactuar con él las decisiones de sus negocios agropecuarios.
+        Don Tulio está disponible precios, así como enseñándoles las plazas y subastas que mejores
+        24 horas y los 7 días de la semana, brindándoles información de clima, precios están pagando por productos
+        agrícolas y pecuarios a nivel enviándoles notificaciones, alertas y consejos prácticos para sus nacional.
+        Adicionalmente, Don Tulio acompaña a los productores actividades, porque, como él sabiamente dice: “Para mayor
+        rentabilidad, informado tendrás que estar”.
+      </p>
+      <button type="button">
+        Agrégalo a tus contactos
+      </button>
+    </div>
+    <div class="KnowD1onTuli__video">
+      <iframe 
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/jPS0kWqVz4s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section class="AboutUs__page_ourTeam">
+    <div class="OurTeam__title">
+      <h2>Nuestro equipo</h2>
+      <p>Nuestro equipo ¡Conoce al escuadrón agro!</p>
+    </div>
+    <div class="OurTeam__content">
+      <div class="OurTeam__content_image">
+        <img src="../../../assets/aboutUs/escuadron-agro.png" alt="Escuadron agro" />
+      </div>
+      <div class="OurTeam__content_text">
+        El Escuadrón Agro es un equipo multidisciplinario de profesionales que trabaja con el ánimo de transformar
+        positivamente la realidad economía; el Escuadrón Agro pone sus conocimientos, pasión y trabajo al servicio de
+        los productores del campo.
+        de los campesinos. Conformado por expertos en ciencias agropecuarias, ciencia de datos, ingeniería, tecnologías
+        digitales, diseño y economía; el Escuadrón Agro pone sus conocimientos, pasión y trabajo al servicio de los
+        productores del campo.
+      </div>
     </div>
   </section>
 </section>

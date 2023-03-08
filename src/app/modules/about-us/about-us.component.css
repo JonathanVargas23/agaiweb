@@ -33,12 +33,10 @@
 .OurHistory__page_seccionTwo h4 {
   font-size: 2rem;
   color: #5BECBC;
-
   margin: 0px;
 }
 
 .OurHistory__page_seccionTwo p {
-
   color: #ffffff;
   margin: 5px 0px;
 
@@ -47,7 +45,6 @@
 .SeccionTwo__ourPassion {
   width: 100%;
   min-height: 300px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -65,5 +62,129 @@
   justify-content: center;
   background-color: #7F42A0;
   padding: 40px;
+}
 
+.SeccionThree__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0px 50px;
+}
+
+.About__page_gallery {
+  width: 100%;
+  padding: 60px;
+}
+
+.Gallery__title {
+  width: 100%;
+  text-align: center;
+  color: var(--verde3);
+  margin-bottom: 60px;
+}
+
+.Gallery__title p, h2 {
+  margin: 0px;
+}
+
+.About__slider_container {
+  width: 100%;
+
+}
+
+.Container__content {
+  width: 90%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.Container__content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.AboutUs__page_knowD1onTulio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--morado4);
+  padding: 60px;
+}
+
+.KnowD1onTulio__content {
+  width: 50%;
+  padding: 10px;
+}
+
+.KnowD1onTulio__content h2 {
+  font-size: 2rem;
+  color: var(--verde4);
+
+}
+
+.KnowD1onTulio__content p {
+  color: var(--blanco);
+}
+
+.KnowD1onTulio__content button {
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--blanco);
+  border: 4px solid var(--verde4);
+  background-color: var(--morado4);
+  padding: 10px 20px;
+  margin: 30px 0px;
+}
+
+.KnowD1onTuli__video {
+  width: 50%;
+  padding: 10px;
+}
+
+.AboutUs__page_ourTeam {
+  width: 100%;
+  padding: 60px 0px;
+}
+
+.OurTeam__title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+
+.OurTeam__title h2 {
+  font-size: 2rem;
+  margin: 0px;
+  color: var(--morado1);
+}
+
+.OurTeam__title p {
+  margin: 0px;
+  color: var(--morado1);
+}
+
+.OurTeam__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.OurTeam__content_image {
+  width: 100%;
+}
+
+.OurTeam__content_image img {
+  width: 100%;
+  height: 100%;
 }

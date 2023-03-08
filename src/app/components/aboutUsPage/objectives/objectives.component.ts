@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-objectives',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./objectives.component.css']
 })
 export class ObjectivesComponent {
-
+  @Input() imageUrl: string = '';
+  @Input() textTitle: string = '';
+  @Input() textContent: string = '';
 }
