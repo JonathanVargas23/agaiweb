@@ -18,7 +18,6 @@
                 <p>2022-05-01</p>
               </div>
             </div>
-
           </owl-carousel>
         </div>
       </section>
@@ -26,12 +25,9 @@
         <div class="Blog__seccion_header">
           <div class="input-wrapper">
             <input type="text" class="input" placeholder="Search" [formControl]="mySearch">
-            <img 
-              *ngIf="!mySearchValue"
-              width="25px"
+            <img *ngIf="!mySearchValue" width="25px"
               src="https://storage.googleapis.com/front-agrodatai-dev/agrodatai/img/landing/blog/buscar.svg"
-              alt="Icon Search"
-            />
+              alt="Icon Search" />
             <span class="close" *ngIf="mySearchValue" (click)="this.mySearch.setValue('')" width="25px"></span>
           </div>
         </div>
@@ -57,12 +53,8 @@
           <h3>Nose encontraron resultados</h3>
         </div>
         <div class="Blog__seccion_paginator">
-          <pagination-controls
-            class="my-pagination"
-            (pageChange)="pages = $event"
-            previousLabel="{{'Ant'}}"
-            nextLabel="{{'Sig'}}"
-          ></pagination-controls>
+          <pagination-controls class="my-pagination" (pageChange)="pages = $event" previousLabel="{{'Ant'}}"
+            nextLabel="{{'Sig'}}"></pagination-controls>
         </div>
       </div>
 

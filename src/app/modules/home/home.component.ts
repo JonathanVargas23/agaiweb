@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFireRemoteConfig } from '@angular/fire/compat/remote-config';
+import { SLIDE_OPTIONS } from './home-constants';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { AngularFireRemoteConfig } from '@angular/fire/compat/remote-config';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  public slideOptions = SLIDE_OPTIONS;
+
   constructor(
     private _remoteConfig: AngularFireRemoteConfig,
   ) {}

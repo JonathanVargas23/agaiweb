@@ -4,7 +4,7 @@
 </lib-skeleton> -->
 
 <section class="principal-banner">
-  <img class="principal-banner-images" src="../../../assets/home/principal-banner-01.png" alt="principal-banner"/>
+  <img class="principal-banner-images" src="../../../assets/home/principal-banner-01.png" alt="principal-banner" />
 </section>
 <section class="welcome">
   <div class="welcome-section">
@@ -14,15 +14,10 @@
       <button class="welcome-container-button">{{ sectionWelcome.button }}</button>
     </div>
     <div class="welcome-container">
-      <iframe 
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/3kgX81zOjcI"
-        title="YouTube video player"
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3kgX81zOjcI" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -49,21 +44,87 @@
     <p class="services-title">{{ sectionServices.title }}</p>
     <div class="services-container">
       <div class="services-container-card">
-        <img class="services-card-image" src="../../../assets/home\/recurso-12.png" alt="servicio-01"/>
+        <img class="services-card-image" src="../../../assets/home\/recurso-12.png" alt="servicio-01" />
         <p class="services-card-description">Obtener información actualizada</p>
       </div>
       <div class="services-container-card">
-        <img class="services-card-image" src="../../../assets/home\/recurso-10.png" alt="servicio-02"/>
+        <img class="services-card-image" src="../../../assets/home\/recurso-10.png" alt="servicio-02" />
         <p class="services-card-description">Solicitar créditos sin salir de tu finca</p>
       </div>
       <div class="services-container-card">
-        <img class="services-card-image" src="../../../assets/home\/recurso-11.png" alt="servicio-03"/>
+        <img class="services-card-image" src="../../../assets/home\/recurso-11.png" alt="servicio-03" />
         <p class="services-card-description">Comercializar tus productos y comprar insumos</p>
       </div>
       <div class="services-container-card">
-        <img class="services-card-image" src="../../../assets/home\/recurso-9.png" alt="servio-04"/>
+        <img class="services-card-image" src="../../../assets/home\/recurso-9.png" alt="servio-04" />
         <p class="services-card-description">Recibir alertas climáticas, sanitarias y de mercado</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="data">
+  <div class="data__secction">
+    <div class="data__section--products">
+      <div class="product__headerData">
+        <img src=".../../../../../assets/home/section-data.png" alt="data section">
+        <h2>
+          Sección de datos
+        </h2>
+      </div>
+      <app-products name="Producto" price="Precio Actual" forescast="Pronóstico" location="Ubicación" weather="Clima"
+        bgColor="#9C4DAD" />
+      <app-products name="Producto" price="Precio Actual" forescast="Pronóstico" location="Ubicación" weather="Clima"
+        bgColor="#7F42A0" />
+      <app-products name="Producto" price="Precio Actual" forescast="Pronóstico" location="Ubicación" weather="Clima"
+        bgColor="#4F317A" />
+      <app-products name="Producto" price="Precio Actual" forescast="Pronóstico" location="Ubicación" weather="Clima"
+        bgColor="#007262" />
+      <app-products name="Producto" price="Precio Actual" forescast="Pronóstico" location="Ubicación" weather="Clima"
+        bgColor="#00593F" />
+
+    </div>
+    <div class="data__section--map">
+      <img src=".../../../../../assets/home/mapa-colombia-general.png" alt="Mapa don tulio">
+    </div>
+  </div>
+</section>
+<section class="downloadApp">
+  <div class="downloadApp__secction">
+    <h2>¡Descarga nuestra aplicación móvil!</h2>
+    <div class="downloadApp__images">
+      <div>
+        <img src=".../../../../../assets/home/imageGooglePlay.png" alt="App mobile play store">
+      </div>
+      <div>
+        <img src=".../../../../../assets/home/imageAppStore.png" alt="App mobile app store">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ourPartners">
+  <div class="ourPartners__secction ">
+    <h2>Nuestros aliados</h2>
+    <p>Contamos con una red de aliados a nivel nacional
+    </p>
+    <div class="ourPartners__carrusel">
+      <owl-carousel #carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+        <!-- <div class="card blog" *ngFor="let blog of dataBlogSelected" (click)="goTo(blog[0])"> -->
+        <div class="card blog">
+          <img src="../../../assets/home/stackeholder-logo-01.png" alt="image blog" />
+        </div>
+        <div class="card blog">
+          <div class="Card__blog_image">
+            <img src="../../../assets/home/stackeholder-logo-02.png" alt="image blog" />
+          </div>
+        </div>
+        <div class="card ">
+          <div class="Card__blog_image">
+            <img src="../../../assets/home/stackeholder-logo-03.png" alt="image blog" />
+          </div>
+        </div>
+      </owl-carousel>
     </div>
   </div>
 </section>
