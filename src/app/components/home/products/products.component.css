@@ -1,0 +1,36 @@
+.products__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.products__block {
+  width: 100%;
+}
+
+.products__block p {
+  font-size: 1.4rem;
+  margin: 0px;
+}
+
+.products__block h2 {
+  color: var(--verde4);
+  margin: 0px 0px 5px;
+}
+
+.products__location, .products__weather {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.products__image img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
