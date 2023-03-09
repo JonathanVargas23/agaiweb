@@ -162,3 +162,162 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.data__secction {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.data__section--products {
+  width: 100%;
+  height: 100%;
+}
+
+.product__headerData {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--morado1);
+  font-weight: bold;
+}
+
+.product__headerData img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.product__headerData h2 {
+  font-size: 2rem;
+}
+
+.data__section--map {
+  width: 100%;
+  height: 100%;
+}
+
+.data__section--map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.downloadApp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--morado1);
+  padding: 0px;
+  margin: 0px;
+}
+
+.downloadApp__secction {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+.downloadApp__secction h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--verde4);
+}
+
+.downloadApp__images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.downloadApp__images img {
+  width: 200px;
+}
+
+.ourPartners {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ourPartners__secction {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--morado1);
+  font-weight: bold;
+  padding: 20px 0px;
+  margin: 0px;
+}
+.ourPartners__secction h2 {
+  font-size: 2rem;
+  margin: 0px;
+}
+.ourPartners__secction p {
+  margin: 0px 0px 30px;
+}
+.ourPartners__carrusel {
+  width: 100%;
+}
+
+.card {
+  width: 80%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  transition: 0.3s;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+
+.blog img {
+  width: 100%;
+  border-radius: 21px 21px 0px 0px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+}
+@media (min-width : 760px) {
+  .data__secction {
+    flex-direction: row;
+    height: 760px;
+  }
+
+  .downloadApp__secction h2 {
+    font-size: 2rem;
+  }
+
+  .downloadApp__images {
+    flex-direction: row;
+  }
+
+}
